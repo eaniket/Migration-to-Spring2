@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    password: Password~1234
+    url: jdbc:mysql://ajaydemosqlserver.mysql.database.azure.com:3306/hotel?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false&DB_CLOSE_ON_EXIT=FALSE 
+    username: demouser
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+server:
+  port: 8082
+ 
